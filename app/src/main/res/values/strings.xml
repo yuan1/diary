@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">一本日记</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="main_action_about">关于</string>
+
+    <string name="menu_index">首页</string>
+    <string name="menu_gallery">图库</string>
+    <string name="menu_manager">设置</string>
+    <string name="menu_classify">分类</string>
+    <string name="title_activity_add_diary">日记添加</string>
+    <string name="title_activity_login">日记登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">邮箱是必填项！</string>
+    <string name="error_invalid_password">密码太短！</string>
+    <string name="error_incorrect_password">密码错误！</string>
+    <string name="error_field_required">这是必填项</string>
+    <string name="title_activity_images">图库</string>
+    <string name="title_activity_type">分类设置</string>
+    <string name="title_activity_classify">分类</string>
+    <string name="title_activity_setting">设置</string>
+
+    <!-- Strings related to Settings -->
+
+</resources>

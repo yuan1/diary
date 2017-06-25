@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cn.javayuan.diary.activity.ClassifyActivity"
+    tools:showIn="@layout/activity_classify">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/classify_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="点击添加新分类"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="14sp"/>
+        <ListView
+            android:id="@+id/classify_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#f9f9f9"
+            android:dividerHeight="5dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

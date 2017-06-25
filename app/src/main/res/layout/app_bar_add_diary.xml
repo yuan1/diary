@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddDiaryActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_add_diary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:expanded="false">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="?attr/colorPrimaryDark">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_add_diary"
+                style="@style/ToolbarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:orientation="vertical">
+                    <View
+                        android:id="@+id/centerInParentAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:id="@+id/add_diary_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/centerInParentAdd"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="06/16/周五"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:id="@+id/add_diary_date_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/centerInParentAdd"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="15:00"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_add_diary" />
+
+</android.support.design.widget.CoordinatorLayout>

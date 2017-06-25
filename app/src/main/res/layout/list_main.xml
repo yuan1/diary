@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/list_content_back"
+        android:elevation="2dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/main_list_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/img" />
+        <TextView
+            android:id="@+id/main_list_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017/06/15"
+            android:textColor="#ccc"
+            android:padding="10dp"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/main_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日记的第一天日记的第一天日记的第一天日记的第一天日记的第一天日记的第一天日记的第一天日记的第一天"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/main_list_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16:50·晴·日记"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:padding="10dp"
+            android:textColor="#ccc"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
