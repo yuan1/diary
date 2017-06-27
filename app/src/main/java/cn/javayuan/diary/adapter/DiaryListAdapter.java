@@ -1,6 +1,7 @@
 package cn.javayuan.diary.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.mzlion.core.lang.StringUtils;
 
+import java.util.Arrays;
 import java.util.List;
 
 import cn.javayuan.diary.bean.DiaryBean;
@@ -61,7 +63,8 @@ public class DiaryListAdapter extends BaseAdapter {
             viewHolder= (ViewHolder) convertView.getTag();
         }
         viewHolder.image.setImageResource(R.mipmap.bga_pp_ic_holder_dark);
-        if(list.get(position).getImages()!=null&&list.get(position).getImages().length>0){
+        viewHolder.image.setVisibility(View.GONE);
+        if(list.get(position).getImages()!=null&&list.get(position).getImages().length>0&&!list.get(position).getImages().equals("null")){
             String url=list.get(position).getImages()[0];
             if(!StringUtils.isEmpty(url)) {
                 viewHolder.image.setVisibility(View.VISIBLE);
