@@ -1,6 +1,8 @@
 ## 一本日记安卓端
 课程设计项目，采用Google Material Design 设计风格，Android Studio 作为开发工具，后端使用PHP通过json 进行数据交互。
 
+APP下载地址：[一本日记APP](https://raw.githubusercontent.com/yuan1/diary/master/app.apk)
+
 PHP后端链接：[https://github.com/pengshang1995/Daily](https://github.com/pengshang1995/Daily)
 
 开源组件：[BGAPhotoPicker-Android](https://github.com/bingoogolapple/BGAPhotoPicker-Android)、[CompactCalendarViewToolbar](https://github.com/kleisauke/CompactCalendarViewToolbar)
