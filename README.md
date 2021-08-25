@@ -10,5 +10,4 @@ PHP后端链接：[https://github.com/pengshang1995/Daily](https://github.com/pe
 感谢。
 
 如有问题请联系limingyuan1996@gmail.com
-个人博客：[时光摧人老](http://www.javayuan.cn)
 
